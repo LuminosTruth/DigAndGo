@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block Title %}
+        <title>Dig & Go - Главная</title>
+    {% endblock Title %}
+    {% block Styles %}
+
+        <link type="text/css" rel="stylesheet" href="{% static "css/landing.css" %}">
+    {% endblock Styles %}
+</head>
+<body>
+{% block Content %}
+    <img id="background-lines" src="{% static "/images/lines.png" %}">
+    <img id="background-excavator" src="{% static "/images/excavator.png" %}">
+    <div class="inner-content">
+        <h1 class="promo-text">
+            Наша компания является лидером на российском рынке спец-техники и предлагает эксклюзивную
+            продукцию высокого качества.
+        </h1>
+        <h1 class="promo-text two">
+            Доверьтесь нам и выберите надежность и эффективность для вашего бизнеса.
+        </h1>
+        <a id="promo-button" href="http://127.0.0.1:8000/">Связаться с нами</a>
+    </div>
+
+{% endblock Content %}
+</body>
+</html>

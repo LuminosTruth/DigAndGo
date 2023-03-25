@@ -1,0 +1,95 @@
+.inner-content {
+    width: 80%;
+    top: 20%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.tech-block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    padding-bottom: 13vh;
+}
+
+.tech-block:nth-child(2n) {
+    flex-direction: row-reverse;
+
+}
+
+.tech-image {
+    border-radius: 25px;
+    width: 20vw;
+    height: 20vw;
+}
+
+.tech-description {
+    width: fit-content;
+    gap: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tech-about {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.tech-name {
+    font-family: 'Tactic Sans';
+    font-weight: bolder;
+    font-size: 1vw;
+}
+
+.tech-text {
+    font-family: Calibri;
+    font-weight: 100;
+    font-size: 0.8vw;
+    width: 23vw;
+}
+
+.tech-specifications {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.tech-specifications-item {
+    padding: 2vh;
+    border-radius: 25px;
+    border-left: solid 1px rgba(255, 255, 255, 0.5);
+    border-right: solid 1px rgba(255, 255, 255, 0.5);
+    width: fit-content;
+    white-space: nowrap;
+    line-height: 0;
+}
+
+.tech-links {
+    display: flex;
+    gap: 1vw;
+}
+
+.tech-link {
+    font-family: Calibri;
+    font-weight: bolder;
+    padding: 2vh;
+    border-radius: 25px;
+    width: fit-content;
+    white-space: nowrap;
+    line-height: 0;
+    background: linear-gradient(35deg, #c62502, #FF5C00);
+    box-shadow: 0px 0 9px #c62502;
+}
+
+.tech-link:hover {
+    box-shadow: 0px 0 15px #c62502;
+}

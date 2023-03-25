@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    {% block Title %}
+        <title>Dig & Go - О компании</title>
+    {% endblock Title %}
+    {% block Styles %}
+        <link type="text/css" rel="stylesheet" href="{% static "css/company.css" %}">
+    {% endblock Styles %}
+</head>
+<body>
+{% block Content %}
+    <div class="inner-content">
+        <h1 class="inner-text">Наша компания специализируется на продаже экскаваторов-погрузчиков, которые являются
+            универсальным и многофункциональным оборудованием для строительства, дорожного хозяйства и других
+            отраслей.</h1>
+        <h1 class="inner-text">Наши экскаваторы-погрузчики обладают высокой производительностью, надежностью и удобством
+            использования, что позволяет нашим клиентам сократить время и затраты на выполнение различных работ.</h1>
+        <h1 class="inner-text">Гарантии и документы :</h1>
+        <div class="tech-links">
+            <a href="#" class="tech-link">ОГРН</a>
+        </div>
+    </div>
+{% endblock Content %}
+</body>
+</html>

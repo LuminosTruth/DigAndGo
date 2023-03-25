@@ -1,0 +1,43 @@
+.inner-content {
+    width: 80%;
+    top: 20%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.inner-text {
+	font-family: "Tactic Sans";
+	font-weight: bolder;
+	font-size: 1vw;
+	line-height: 2vw;
+	color: rgb(255 255 255 / 80%);
+	margin-top: 5vh;
+	width: 48vw;
+}
+
+.tech-links {
+    display: flex;
+    gap: 1vw;
+    margin-top: 2vh;
+}
+
+.tech-link {
+    font-family: Calibri;
+    font-weight: bolder;
+    padding: 1vw;
+    border-radius: 25px;
+    width: fit-content;
+    white-space: nowrap;
+    line-height: 0;
+    background: linear-gradient(35deg, #c62502, #FF5C00);
+    box-shadow: 0px 0 9px #c62502;
+}
+
+.tech-link:hover {
+    box-shadow: 0px 0 15px #c62502;
+}

@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    {% block Title %}
+        <title>Dig & Go</title>
+    {% endblock Title %}
+    {% block Styles %}
+    {% endblock Styles %}
+    <link type="text/css" rel="stylesheet" href="{% static "css/base.css" %}">
+</head>
+<body>
+<script>
+
+    function getCookie(name) {
+        let value = "; " + document.cookie;
+        let parts = value.split("; " + name + "=");
+        if (parts.length == 2) return parts.pop().split(";").shift();
+    }
+
+    function switchTheme() {
+        if (getCookie("theme") == "dark") {
+            document.cookie = "theme=light"
+        } else {
+            document.cookie = "theme=dark"
+        }
+    }
+</script>
+<div class="header" id="header">
+    <div class="header-brand">
+        <a href={% url "landing-page" %}>DIG & GO</a>
+    </div>
+    <div class="header-categories">
+        <a class="header-button current-page" href={% url 'landing-page' %}>Главная</a>
+        <a class="header-button" href={% url 'tech' %}>Техника</a>
+        <a class="header-button" href={% url 'equipment' %}>Оборудование</a>
+        <a class="header-button" href={% url 'company' %}>О компании</a>
+        <a class="header-button" href={% url 'contacts' %}>Контакты</a>
+    </div>
+    <button id="theme-slider" class="theme-slider" onclick="switchTheme()">
+        <svg id="theme-slider-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M512,299.89v12c-27,96.84-88.67,160.01-185,189.5-89.08,21.39-168.74,3.06-239-55C36.76,399.74,7.42,341.91,0,272.89v-45C13.93,120.8,70.93,46.96,171,6.39c6.38-1.85,12.71-3.85,19-6,15.19-2.13,23.02,4.37,23.5,19.5-.67,2-1.33,4-2,6-33.37,41.79-47.37,89.45-42,143,12.43,80.42,56.93,134.25,133.5,161.5,52.57,15.47,102.9,10.14,151-16,12.03-8.01,24.03-16.01,36-24,9.9-2.32,17.24,.84,22,9.5Z"/>
+        </svg>
+    </button>
+    <div class="header-contact">
+        <a href={% url 'contact' %}>Связаться с нами</a>
+    </div>
+</div>
+<div class="Content" id="Content">
+    {% block Content %}
+    {% endblock Content %}
+</div>
+</body>
+</html>

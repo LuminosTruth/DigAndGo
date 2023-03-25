@@ -1,0 +1,135 @@
+html, body {
+    background: #161616;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 0.8vw;
+    font-family: Calibri;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.8vw;
+    font-family: Calibri;
+    color: #fff;
+}
+
+#header {
+    position: fixed;
+    top: 5%;
+    width: 80%;
+    height: 8.09vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#header > .header-brand > a {
+    font-size: 2.34vw;
+    font-family: "Tactic Sans";
+    font-weight: 1000;
+    color: #fff;
+}
+
+#header > .header-categories {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100%;
+    gap: 50px;
+    flex: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#header > .header-categories > .header-button {
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-family: Calibri;
+    font-weight: lighter;
+    flex-grow: 1;
+    position: relative;
+    padding: 2%;
+    white-space: nowrap;
+    z-index: 999;
+    border: solid 1px rgba(255, 255, 255, 0);
+    border-radius: 25px;
+}
+
+.header-button:hover {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+#header > .header-categories > .header-button.current-page {
+    font-weight: Bolder;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.header-contact {
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    padding: 1%;
+}
+
+.header-contact:hover {
+    border: solid 1px rgba(255, 255, 255, 0.7);
+}
+
+.header-contact > a {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 0;
+}
+
+.header-contact:hover > a {
+    color: rgba(255, 255, 255, 1);
+}
+
+.header-contact:hover {
+    scale: 1.025;
+}
+
+
+#Content {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+
+#theme-slider {
+    width: 3vh;
+    height: 3vh;
+}
+
+.contact-block:hover {
+    scale: 1.05;
+}
+
+#theme-slider {
+    width: 3vh;
+    height: 3vh;
+    margin-right: 1vw;
+    background: none;
+    border: none;
+}
+
+#theme-slider-icon > path {
+    fill: #fff;
+}
