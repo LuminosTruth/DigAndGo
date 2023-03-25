@@ -1,5 +1,5 @@
 html, body {
-    background: white;
+    background: #F3F6FD;
     height: 100%;
     overflow-x: hidden;
 }
@@ -16,14 +16,14 @@ html, body {
     text-decoration: none;
     font-size: 0.8vw;
     font-family: Calibri;
-    color: #fff;
+    color: #1F1C2E;
 }
 
 a {
     text-decoration: none;
     font-size: 0.8vw;
     font-family: Calibri;
-    color: #fff;
+    color: #FFF;
 }
 
 #header {
@@ -43,7 +43,7 @@ a {
     font-size: 2.34vw;
     font-family: "Tactic Sans";
     font-weight: 1000;
-    color: #fff;
+    color: #1F1C2E;
 }
 
 #header > .header-categories {
@@ -59,7 +59,7 @@ a {
 
 #header > .header-categories > .header-button {
     font-size: 1vw;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(31, 28, 46, 0.8);
     text-decoration: none;
     font-family: Calibri;
     font-weight: lighter;
@@ -68,36 +68,36 @@ a {
     padding: 2%;
     white-space: nowrap;
     z-index: 999;
-    border: solid 1px rgba(255, 255, 255, 0);
+    border: solid 1px rgba(31, 28, 46, 0);
     border-radius: 25px;
 }
 
 .header-button:hover {
-    color: rgba(255, 255, 255, 1) !important;
+    color: rgba(31, 28, 46, 1) !important;
 }
 
 #header > .header-categories > .header-button.current-page {
     font-weight: Bolder;
-    color: rgba(255, 255, 255, 1) !important;
+    color: rgba(31, 28, 46, 1) !important;
 }
 
 .header-contact {
-    border: solid 1px rgba(255, 255, 255, 0.5);
+    border: solid 1px rgba(31, 28, 46, 0.5);
     border-radius: 25px;
     padding: 1%;
 }
 
 .header-contact:hover {
-    border: solid 1px rgba(255, 255, 255, 0.7);
+    border: solid 1px rgba(31, 28, 46, 0.7);
 }
 
 .header-contact > a {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(31, 28, 46, 0.8);
     line-height: 0;
 }
 
 .header-contact:hover > a {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(31, 28, 46, 1);
 }
 
 .header-contact:hover {
@@ -131,5 +131,5 @@ a {
 }
 
 #theme-slider-icon > path {
-    fill: #fff;
+    fill: #1F1C2E;
 }

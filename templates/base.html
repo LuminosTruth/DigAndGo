@@ -8,10 +8,17 @@
     {% endblock Title %}
     {% block Styles %}
     {% endblock Styles %}
-    <link type="text/css" rel="stylesheet" href="{% static "css/base.css" %}">
+    {% if request.COOKIES.theme == 'dark' %}
+        <link type="text/css" rel="stylesheet" href="{% static "css/base.css" %}" id="base-theme">
+    {% else %}
+        <link type="text/css" rel="stylesheet" href="{% static "css/base-light.css" %}" id="base-theme">
+    {% endif %}
 </head>
 <body>
 <script>
+    function getCurrentHtml() {
+        return window.location.pathname.split("/").pop()
+    }
 
     function getCookie(name) {
         let value = "; " + document.cookie;
@@ -21,11 +28,13 @@
 
     function switchTheme() {
         if (getCookie("theme") == "dark") {
-            document.cookie = "theme=light"
+            document.cookie = "theme=light" + ";path=/"
         } else {
-            document.cookie = "theme=dark"
+            document.cookie = "theme=dark" + ";path=/"
         }
+        location.reload(true);
     }
+
 </script>
 <div class="header" id="header">
     <div class="header-brand">

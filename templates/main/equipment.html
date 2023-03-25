@@ -8,7 +8,11 @@
         <title>Dig & Go - Оборудование</title>
     {% endblock Title %}
     {% block Styles %}
-        <link type="text/css" rel="stylesheet" href="{% static "css/tech.css" %}">
+        {% if request.COOKIES.theme == 'dark' %}
+            <link type="text/css" rel="stylesheet" href="{% static "css/equipment.css" %}">
+        {% else %}
+            <link type="text/css" rel="stylesheet" href="{% static "css/equipment-light.css" %}">
+        {% endif %}
     {% endblock Styles %}
 </head>
 <body>

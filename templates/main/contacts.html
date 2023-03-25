@@ -8,7 +8,11 @@
         <title>Dig & Go - Контакты</title>
     {% endblock Title %}
     {% block Styles %}
-        <link type="text/css" rel="stylesheet" href="{% static "css/contacts.css" %}">
+        {% if request.COOKIES.theme == 'dark' %}
+            <link type="text/css" rel="stylesheet" href="{% static "css/contacts.css" %}">
+        {% else %}
+            <link type="text/css" rel="stylesheet" href="{% static "css/contacts-light.css" %}">
+        {% endif %}
     {% endblock Styles %}
 </head>
 <body>

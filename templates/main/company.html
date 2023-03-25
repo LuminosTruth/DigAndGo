@@ -8,7 +8,11 @@
         <title>Dig & Go - О компании</title>
     {% endblock Title %}
     {% block Styles %}
-        <link type="text/css" rel="stylesheet" href="{% static "css/company.css" %}">
+        {% if request.COOKIES.theme == 'dark' %}
+            <link type="text/css" rel="stylesheet" href="{% static "css/company.css" %}">
+        {% else %}
+            <link type="text/css" rel="stylesheet" href="{% static "css/company-light.css" %}">
+        {% endif %}
     {% endblock Styles %}
 </head>
 <body>
