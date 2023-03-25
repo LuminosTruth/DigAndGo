@@ -41,7 +41,7 @@
     font-family: Calibri;
     font-weight: 1000;
     width: 39.06vw;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgb(31 28 46 / 90%);
     line-height: 170%;
     margin-bottom: 5.55vh;
 }
@@ -51,7 +51,7 @@
     font-family: Calibri;
     font-weight: 100;
     width: 39.06vw;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgb(31 28 46 / 90%);
     line-height: 170%;
 }
 

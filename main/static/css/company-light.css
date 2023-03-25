@@ -11,13 +11,13 @@
 }
 
 .inner-text {
-	font-family: "Tactic Sans";
-	font-weight: bolder;
-	font-size: 1vw;
-	line-height: 2vw;
-	color: rgb(255 255 255 / 80%);
-	margin-top: 5vh;
-	width: 48vw;
+    font-family: "Tactic Sans";
+    font-weight: bolder;
+    font-size: 1vw;
+    line-height: 2vw;
+    color: rgb(31 28 46 / 80%);
+    margin-top: 5vh;
+    width: 48vw;
 }
 
 .tech-links {
