@@ -123,9 +123,10 @@ a {
 }
 
 #theme-slider {
-    width: 3vh;
-    height: 3vh;
+    width: 1vw;
+    height: 1vw;
     margin-right: 1vw;
+    margin-left: 1vw;
     background: none;
     border: none;
 }
